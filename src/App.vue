@@ -6,7 +6,8 @@
         class="todo-record"
         v-model="newTodo"
         type="text"
-        placeholder="Додати замітку"
+        placeholder="Додати нотатку"
+        v-on:keydown.enter="add"
       />
       <button class="todo-button" @click="add">{{ addTodo }}</button>
       <TodoList
@@ -52,7 +53,7 @@ export default {
 
   data() {
     return {
-      title: "Замітки",
+      title: "Нотатки",
       addTodo: "Записати",
       all: "Всі",
       completed: "Виконані",
@@ -100,7 +101,7 @@ export default {
   width: 400px;
   min-height: 600px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 30px 30px 90px 30px;
   background-color: #dfe2db;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
   @media screen and (max-width: 480px) {

@@ -1,20 +1,22 @@
 <template>
-  <li class="todo-item" v-for="todo in todos" :key="todo.id">
-    <div class="todo-item-info">
-      <input
-        class="todo-item-check"
-        type="checkbox"
-        v-model="todo.completed"
-        @click="toggle(todo)"
-      />
-      <span
-        class="todo-item-text"
-        :class="{ 'todo-item-text-completed': todo.completed }"
-        >{{ todo.text }}</span
-      >
-    </div>
-    <button class="todo-item-btn" @click="remove(todo)">&#215;</button>
-  </li>
+  <template v-for="(todo, index) in todos">
+    <li class="todo-item" v-if="index < 7" :key="todo.id">
+      <div class="todo-item-info">
+        <input
+          class="todo-item-check"
+          type="checkbox"
+          v-model="todo.completed"
+          @click="toggle(todo)"
+        />
+        <span
+          class="todo-item-text"
+          :class="{ 'todo-item-text-completed': todo.completed }"
+          >{{ todo.text }}</span
+        >
+      </div>
+      <button class="todo-item-btn" @click="remove(todo)">&#215;</button>
+    </li>
+  </template>
 </template>
 
 <script>

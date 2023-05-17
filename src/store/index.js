@@ -9,7 +9,7 @@ const store = createStore({
   },
   mutations: {
     ADD_TODO(state, todo) {
-      state.todos.push(todo);
+      state.todos.unshift(todo);
       localStorage.setItem("todos", JSON.stringify(state.todos));
     },
     REMOVE_TODO(state, todo) {
