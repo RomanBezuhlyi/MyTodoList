@@ -65,14 +65,11 @@ export default {
     }
   }
   &-btn {
-    padding: -1px;
-    border-radius: 50%;
     border: none;
-    background-color: #d45553;
     opacity: 0.7;
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
+    background-color: transparent;
+    color: #d45553;
+    font-size: 24px;
     cursor: pointer;
   }
 }

@@ -159,6 +159,7 @@ export default {
       color: #fff;
       text-transform: uppercase;
       font-size: 10px;
+      padding: 5px;
       min-width: 80px;
       height: 30px;
       cursor: pointer;
