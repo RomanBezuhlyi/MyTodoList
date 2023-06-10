@@ -106,7 +106,7 @@ export default {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
   @media screen and (max-width: 480px) {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
   }
   &-title {
     font-size: 36px;
@@ -159,7 +159,7 @@ export default {
       color: #fff;
       text-transform: uppercase;
       font-size: 10px;
-      width: 80px;
+      min-width: 80px;
       height: 30px;
       cursor: pointer;
       transition: background 0.3s;
