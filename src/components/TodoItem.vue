@@ -45,7 +45,7 @@ export default {
   justify-content: space-between;
   background-color: #b8c4b8;
   width: 100%;
-  padding: 10px;
+  padding: 10px 5px;
 
   &-info {
     display: flex;
