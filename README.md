@@ -1,24 +1,24 @@
 # project-vue
 
-## Project setup
+## Встановлення проекту
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+npm install
 ```
 
-### Compiles and minifies for production
+### Запуск проекту
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+npm run serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Опис Todo-list
+```
+В цьому web-додатку ви зможете записувати свої замітки, відмічати виконані справи, видаляти їх, а також редагувати(просто клацніть два рази по потрібній вам замітці і перезапишіть її).
+```
+
+### Що використовував для створення Todo-list?
+```
+Vue CLI - збірка для Todo-list
+Vuex - для управління станом
+LocalStorage - для зберігання стану додатку
+
+```

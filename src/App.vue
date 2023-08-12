@@ -14,7 +14,6 @@
         :todos="filteredTodos"
         :remove="removeTodo"
         :toggle="toggleTodo"
-        :edit="editTodo"
       />
       <div class="todo-filter">
         <button
@@ -68,7 +67,6 @@ export default {
   methods: {
     ...mapActions(["removeTodo"]),
     ...mapActions(["toggleTodo"]),
-    ...mapActions(["editTodo"]),
     ...mapActions(["setVisibilityFilter"]),
 
     add() {

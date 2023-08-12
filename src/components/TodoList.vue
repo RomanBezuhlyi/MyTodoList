@@ -1,6 +1,6 @@
 <template>
   <ul class="todo-list">
-    <TodoItem :todos="todos" :remove="remove" :toggle="toggle" :edit="edit" />
+    <TodoItem :todos="todos" :remove="remove" :toggle="toggle" />
   </ul>
 </template>
 
@@ -19,9 +19,6 @@ export default {
       type: Function,
     },
     toggle: {
-      type: Function,
-    },
-    edit: {
       type: Function,
     },
   },

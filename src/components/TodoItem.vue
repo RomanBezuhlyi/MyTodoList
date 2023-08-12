@@ -39,9 +39,6 @@ export default {
     toggle: {
       type: Function,
     },
-    edit: {
-      type: Function,
-    },
   },
   data() {
     return {
