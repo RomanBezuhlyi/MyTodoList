@@ -19,6 +19,13 @@ const store = createStore({
         localStorage.setItem("todos", JSON.stringify(state.todos));
       }
     },
+    EDIT_TODO(state, { todo, newText }) {
+      const index = state.todos.indexOf(todo);
+      if (index > -1) {
+        state.todos[index].text = newText;
+        localStorage.setItem("todos", JSON.stringify(state.todos));
+      }
+    },
     TOGGLE_TODO(state, todo) {
       todo.completed = !todo.completed;
       localStorage.setItem("todos", JSON.stringify(state.todos));
@@ -42,6 +49,9 @@ const store = createStore({
     },
     toggleTodo({ commit }, todo) {
       commit("TOGGLE_TODO", todo);
+    },
+    editTodo({ commit }, { todo, newText }) {
+      commit("EDIT_TODO", { todo, newText });
     },
     setVisibilityFilter({ commit }, filter) {
       commit("SET_VISIBILITY_FILTER", filter);

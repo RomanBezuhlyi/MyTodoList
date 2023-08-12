@@ -1,11 +1,11 @@
 <template>
   <ul class="todo-list">
-    <TodoItem :todos="todos" :remove="remove" :toggle="toggle" />
+    <TodoItem :todos="todos" :remove="remove" :toggle="toggle" :edit="edit" />
   </ul>
 </template>
 
 <script>
-import TodoItem from "../components/TodoItem.vue";
+import TodoItem from "@/components/TodoItem.vue";
 export default {
   components: {
     TodoItem,
@@ -19,6 +19,9 @@ export default {
       type: Function,
     },
     toggle: {
+      type: Function,
+    },
+    edit: {
       type: Function,
     },
   },

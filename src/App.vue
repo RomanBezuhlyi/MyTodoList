@@ -14,6 +14,7 @@
         :todos="filteredTodos"
         :remove="removeTodo"
         :toggle="toggleTodo"
+        :edit="editTodo"
       />
       <div class="todo-filter">
         <button
@@ -43,7 +44,7 @@
 </template>
 
 <script>
-import TodoList from "./components/TodoList.vue";
+import TodoList from "@/components/TodoList.vue";
 import { mapGetters, mapActions } from "vuex";
 export default {
   name: "App",
@@ -67,6 +68,7 @@ export default {
   methods: {
     ...mapActions(["removeTodo"]),
     ...mapActions(["toggleTodo"]),
+    ...mapActions(["editTodo"]),
     ...mapActions(["setVisibilityFilter"]),
 
     add() {
